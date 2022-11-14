@@ -1,7 +1,7 @@
-const { SChema, model } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const userSchema = new SChema({
-    userName: {
+const userSchema = new Schema({
+    username: {
         type: String,
         unique: true,
         required: true,
